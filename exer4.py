@@ -1,8 +1,7 @@
-tuple1 = ([2,7])
-tuple2 = ([3,5])
-tuple3 = ([1,9])
-tuple4 = ([12,16])
-tuple5 = ([23,35])
+my_list = [(8,3),(7,5),(6,4),(1,9)]
 
+def tuples(item):
+    return item[1]
 
-print(tuple5[-1],tuple4[-1],tuple3[-1],tuple1[-1],tuple2[-1])
+my_list.sort(key=tuples)
+print(my_list)
